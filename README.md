@@ -29,11 +29,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_au
 **If you want to install ROS-Noetic (for Ubuntu 20.04)**:
 
 ```
-$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_autoinstall/main/install_ros.sh)" ${YOUR BASH}
-# if you use `bash`, 
-$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_autoinstall/main/install_ros.sh)" bash
-# if you use `zsh`, 
-$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_autoinstall/main/install_ros.sh)" zsh
+$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_autoinstall/main/install_ros_noetic.sh)" ${YOUR BASH}
+# e.g. if you use `bash`, 
+$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_autoinstall/main/install_ros_noetic.sh)" bash
+# e.g. if you use `zsh`, 
+$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_autoinstall/main/install_ros_noetic.sh)" zsh
 ```
 
 
