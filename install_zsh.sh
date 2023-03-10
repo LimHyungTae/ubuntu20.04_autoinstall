@@ -7,5 +7,14 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 # NOTE: It requires agreeing with something, so automatic installation may ask you to agree to something
 sudo apt-get install fonts-powerline -y
 
+################## Plugins ################## 
+
+# fasd
+sudo add-apt-repository ppa:aacebedo/fasd
+sudo apt-get update -y
+sudo apt-get install fasd -y
+
+# zsh-autosuggestions
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# zsh-syntax-highlighting
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
