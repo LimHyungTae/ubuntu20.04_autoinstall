@@ -23,6 +23,13 @@ install_chrome() {
   $RUN dpkg -i google-chrome-stable_current_amd64.deb
 }
 
+install_simple_screen_recorder() {
+  RUN=$(user_can_sudo && echo "sudo" || echo "command")
+  $RUN apt-add-repository ppa:maarten-baert/simplescreenrecorder
+  $RUN apt-get update -y  
+  $RUN apt-get install simplescreenrecorder -y
+}
+
 install_docker() {
   RUN=$(user_can_sudo && echo "sudo" || echo "command")
   $RUN apt-get remove docker docker-engine docker.io containerd runc
@@ -62,14 +69,15 @@ main() {
   $RUN apt install terminator -y  
 
   # Simple screen recorder
-  $RUN apt-add-repository ppa:maarten-baert/simplescreenrecorder
-  $RUN apt-get update -y  
-  $RUN apt-get install simplescreenrecorder -y
+  install_simple_screen_recorder
   
   # Inkscape 
   $RUN apt-get install inkscape
   
-  # Inkscape 
+  # pip3
+  $RUN apt install python3-pip -y
+  
+  # Docker
   install_docker
 }
 
