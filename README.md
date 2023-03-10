@@ -12,7 +12,7 @@ $ sudo apt-get install curl -y
 
 # All Things are ready!
 
-Just run the below command to bootstrap your Ubuntu setting:
+Just run the below command to bootstrap your Ubuntu setting. I recommend using this script in your local computer, not server.
 
 ```
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_autoinstall/main/install_independent_packages.sh)"
@@ -22,13 +22,21 @@ Below things are installed (update: Mar 10th, 2023)
 * git
 * wget
 * vim
-* chrome
-* fonts-powerline (for `agonster` theme for zsh user)
+* chrome (**NOTE**: It requires typing `enter` key, so automatic installation may breaks)
+* ~NeoVim~
 * Some C++ libraries
 * Video utils for playing mkv file
+* terminator (**WARNING**: it may change your cmd's color theme)
 * xpad
+* simplescreenrecorder
+* Inkscape
+* Docker
+---
+
+If you don't want to install something, just comment those lines by `#`.
 
 ---
+## Additional packages
 
 **If you want to install zsh**:
 
