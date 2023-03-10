@@ -2,7 +2,7 @@
 # set -e
 
 install_docker() {
-  RUN=$(user_can_sudo && echo "sudo" || echo "command")
+  RUN=sudo
   $RUN apt-get remove docker docker-engine docker.io containerd runc
   $RUN apt-get install ca-certificates curl gnupg lsb-release -y
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
