@@ -39,7 +39,7 @@ install_docker() {
 	  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
 	  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   $RUN apt-get update
-	$RUN apt-get install docker-ce docker-ce-cli containerd.io
+  $RUN apt-get install docker-ce docker-ce-cli containerd.io -y
 }
 
 main() {
