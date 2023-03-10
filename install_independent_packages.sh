@@ -41,6 +41,7 @@ main() {
   # $RUN apt-get install -y git curl wget vim
   
   # chrome
+  # NOTE: It requires typing `enter` key, so automatic installation may breaks
   # install_chrome
   
   # NeoVIM
@@ -48,6 +49,7 @@ main() {
   
   # Resolve the font issue of `agnoster` theme of zsh. Although you don't use zsh, it's totally fine
   # Easy way: If your are using Ubuntu >= 16.04 you can simply run: 
+  # NOTE: It requires agreeing with something, so automatic installation may breaks
   $RUN apt-get install fonts-powerline -y
   
   # Set minimal C++ example 
