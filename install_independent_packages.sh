@@ -49,6 +49,9 @@ main() {
   $RUN apt-get upgrade
   $RUN apt-get install -y git wget vim
   
+  # Time sync. for dual booting btw Window and Ubuntu
+  timedatectl set-local-rtc 1 --adjust-system-clock
+  
   # chrome
   # NOTE: It requires typing `enter` key, so automatic installation may breaks
   # install_chrome
