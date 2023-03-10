@@ -61,10 +61,15 @@ main() {
   # terminator
   $RUN apt install terminator -y  
 
+
   # Simple screen recorder
   $RUN apt-add-repository ppa:maarten-baert/simplescreenrecorder
   $RUN apt-get update -y  
   $RUN apt-get install simplescreenrecorder -y
+  
+  # Inkscape 
+  $RUN apt-get install inkscape
+
 }
 
 main 
