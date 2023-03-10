@@ -1,3 +1,6 @@
+# To change the location btw Ctrl and Caps Lock
+sudo apt-get install gnome-tweak-tool -y
+
 # To install Lunar Vim, Neo-Vim > 0.8 is required
 wget https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.deb
 sudo apt install ./nvim-linux64.deb -y
