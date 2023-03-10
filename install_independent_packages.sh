@@ -10,7 +10,7 @@ user_can_sudo() {
   ! LANG= sudo -n -v 2>&1 | grep -q "may not run sudo"
 }
 
-RUN=$(user_can_sudo && echo "sudo" || echo "command")
+
 
 install_neovim() {
   $RUN add-apt-repository ppa:neovim-ppa/stable 
@@ -35,7 +35,7 @@ main() {
     shift
   done
   
-  # RUN=$(user_can_sudo && echo "sudo" || echo "command")
+  RUN=$(user_can_sudo && echo "sudo" || echo "command")
   
   # $RUN apt-get update
   # $RUN apt-get install -y git curl wget vim
