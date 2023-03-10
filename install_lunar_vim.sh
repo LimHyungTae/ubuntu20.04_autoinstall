@@ -1,6 +1,6 @@
 # To install Lunar Vim, Neo-Vim > 0.8 is required
 wget https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.deb
-sudo apt install ./nvim-linux64.deb
+sudo apt install ./nvim-linux64.deb -y
 
 #Install cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
