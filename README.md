@@ -1,6 +1,6 @@
-# ubuntu20.04_autoinstall
+# ubuntu20.04 Auto-Installation
 
-Auto install of Ubuntu 20.04
+Auto installation of Ubuntu 20.04. It's supper annoying to set up a computer step by step! :(
 
 # Requirements
 
@@ -30,6 +30,7 @@ Below things are installed (update: Mar 10th, 2023)
 * xpad
 * simplescreenrecorder
 * Inkscape
+* pip3
 * Docker
 ---
 
