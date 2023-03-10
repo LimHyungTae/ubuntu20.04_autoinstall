@@ -10,8 +10,6 @@ user_can_sudo() {
   ! LANG= sudo -n -v 2>&1 | grep -q "may not run sudo"
 }
 
-
-
 install_neovim() {
   $RUN add-apt-repository ppa:neovim-ppa/stable 
   $RUN apt-get update -y
@@ -24,33 +22,17 @@ install_chrome() {
 }
 
 main() {
-  # Parse arguments
-  while [ $# -gt 0 ]; do
-    case $1 in
-      --full) export INSTALL_FULL=yes ;;
-    esac
-    case $1 in
-      --skip-decrypt) export DECRYPT=no ;;
-    esac
-    shift
-  done
-  
   RUN=$(user_can_sudo && echo "sudo" || echo "command")
   
-  # $RUN apt-get update
-  # $RUN apt-get install -y git curl wget vim
+  $RUN apt-get update
+  $RUN apt-get install -y git wget vim
   
   # chrome
   # NOTE: It requires typing `enter` key, so automatic installation may breaks
-  # install_chrome
+  install_chrome
   
   # NeoVIM
   # install_neovim
-  
-  # Resolve the font issue of `agnoster` theme of zsh. Although you don't use zsh, it's totally fine
-  # Easy way: If your are using Ubuntu >= 16.04 you can simply run: 
-  # NOTE: It requires agreeing with something, so automatic installation may breaks
-  $RUN apt-get install fonts-powerline -y
   
   # Set minimal C++ example 
   $RUN apt install cmake libeigen3-dev libboost-all-dev -y
@@ -60,6 +42,14 @@ main() {
   
   # xpad
   $RUN apt install xpad -y  
+  
+  # terminator
+  $RUN apt install terminator -y  
+
+  # Simple screen recorder
+  $RUN apt-add-repository ppa:maarten-baert/simplescreenrecorder
+  $RUN apt-get update -y  
+  $RUN apt-get install simplescreenrecorder -y
 }
 
-main "$@"
+main 
