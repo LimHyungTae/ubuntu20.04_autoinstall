@@ -55,7 +55,6 @@ main() {
 
   # For playing mkv file
   $RUN apt install ubuntu-restricted-extras mpv -y
-
 }
 
 main "$@"
