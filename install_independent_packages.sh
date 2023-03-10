@@ -61,7 +61,6 @@ main() {
   # terminator
   $RUN apt install terminator -y  
 
-
   # Simple screen recorder
   $RUN apt-add-repository ppa:maarten-baert/simplescreenrecorder
   $RUN apt-get update -y  
@@ -69,7 +68,9 @@ main() {
   
   # Inkscape 
   $RUN apt-get install inkscape
-
+  
+  # Inkscape 
+  install_docker
 }
 
 main 
