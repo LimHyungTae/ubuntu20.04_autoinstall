@@ -33,7 +33,7 @@ Below things are installed (update: Mar 10th, 2023)
 * Docker
 ---
 
-If you don't want to install something, just comment those lines by `#`.
+If you don't want to install something, push this repository and comment those lines by `#`. Then, just run it like `sh ${DIR}/install_independent_packages.sh`
 
 ---
 ## Additional packages
