@@ -57,6 +57,9 @@ main() {
 
   # For playing mkv file
   $RUN apt install ubuntu-restricted-extras mpv -y
+  
+  # xpad
+  $RUN apt install xpad -y  
 }
 
 main "$@"
