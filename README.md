@@ -18,6 +18,16 @@ Just run the below command to bootstrap your Ubuntu setting:
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/LimHyungTae/ubuntu20.04_autoinstall/main/install_independent_packages.sh)"
 ```
 
+Below things are installed (update: Mar 10th, 2023)
+* git
+* wget
+* vim
+* chrome
+* fonts-powerline (for `agonster` theme for zsh user)
+* Some C++ libraries
+* Video utils for playing mkv file
+* xpad
+
 ---
 
 **If you want to install zsh**:
