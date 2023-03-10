@@ -6,3 +6,6 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 # Easy way: If your are using Ubuntu >= 16.04 you can simply run: 
 # NOTE: It requires agreeing with something, so automatic installation may ask you to agree to something
 sudo apt-get install fonts-powerline -y
+
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
