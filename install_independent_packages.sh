@@ -69,9 +69,7 @@ main() {
   
   # Notion 
   install_notion
-  # NeoVIM
-  # install_neovim
-  
+    
   # Set minimal C++ example 
   $RUN apt install cmake libeigen3-dev libboost-all-dev -y
 
