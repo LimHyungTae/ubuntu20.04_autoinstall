@@ -24,7 +24,7 @@ Below things are installed (update: Mar 10th, 2023)
 * vim
 * chrome (**NOTE**: It requires typing `enter` key, so automatic installation may breaks)
 * dconf-editor (to place favorite icons in an optimal way)
-* ~NeoVim~
+* Notion (https://shanepark.tistory.com/265)
 * Some C++ libraries
 * Video utils for playing mkv file
 * terminator (**WARNING**: it may change your cmd's color theme)
