@@ -7,6 +7,9 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 # NOTE: It requires agreeing with something, so automatic installation may ask you to agree to something
 sudo apt-get install fonts-powerline -y
 
+# If you wanna use powerlevel10k theme
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 ################## Plugins ################## 
 
 # fasd
