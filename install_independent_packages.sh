@@ -23,6 +23,13 @@ install_chrome() {
   $RUN dpkg -i google-chrome-stable_current_amd64.deb
 }
 
+install_notion() {
+  RUN=$(user_can_sudo && echo "sudo" || echo "command")
+  echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
+  $RUN apt update
+  $RUN apt install notion-app-enhanced  
+}
+
 install_simple_screen_recorder() {
   RUN=$(user_can_sudo && echo "sudo" || echo "command")
   $RUN apt-add-repository ppa:maarten-baert/simplescreenrecorder
@@ -58,8 +65,10 @@ main() {
   
   # dconf-editor to change the order of favorites
   # https://askubuntu.com/questions/1108474/how-to-drag-and-move-icons-in-ubuntu-18-04-1-favourites-bar
-  https://askubuntu.com/questions/1108474/how-to-drag-and-move-icons-in-ubuntu-18-04-1-favourites-bar
+  sudo apt install dconf-editor
   
+  # Notion 
+  install_notion
   # NeoVIM
   # install_neovim
   
