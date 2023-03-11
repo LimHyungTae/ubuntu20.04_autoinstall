@@ -56,6 +56,10 @@ main() {
   # NOTE: It requires typing `enter` key, so automatic installation may breaks
   # install_chrome
   
+  # dconf-editor to change the order of favorites
+  # https://askubuntu.com/questions/1108474/how-to-drag-and-move-icons-in-ubuntu-18-04-1-favourites-bar
+  https://askubuntu.com/questions/1108474/how-to-drag-and-move-icons-in-ubuntu-18-04-1-favourites-bar
+  
   # NeoVIM
   # install_neovim
   
