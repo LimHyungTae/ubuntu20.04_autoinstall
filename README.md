@@ -23,7 +23,7 @@ Below things are installed (update: Mar 10th, 2023)
 * wget
 * vim
 * chrome (**NOTE**: It requires typing `enter` key, so automatic installation may breaks)
-* dconf-editor
+* dconf-editor (to place favorite icons in an optimal way)
 * ~NeoVim~
 * Some C++ libraries
 * Video utils for playing mkv file
