@@ -18,3 +18,7 @@ LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.
 # Nerd Font for kitti icons
 git clone https://github.com/ryanoasis/nerd-fonts.git
 cd nerd-fonts && ./install.sh
+
+# After then, type
+# :set clipboard+=unnamedplus <- for ctrl + c / ctrl + v
+# :set number
