@@ -1,5 +1,8 @@
-# To change the location btw Ctrl and Caps Lock
+# To change the location btw `Ctrl` and `CapsLock`
 sudo apt-get install gnome-tweak-tool -y
+
+# To map `CapsLock` key to `ESC`, which maybe not used for you! Haha
+sudo apt install xclip xcape -y
 
 # To install Lunar Vim, Neo-Vim > 0.8 is required
 wget https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.deb
