@@ -9,15 +9,3 @@ sudo apt-get install fonts-powerline -y
 
 # If you wanna use powerlevel10k theme
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-################## Plugins ################## 
-
-# fasd
-sudo add-apt-repository ppa:aacebedo/fasd
-sudo apt-get update -y
-sudo apt-get install fasd -y
-
-# zsh-autosuggestions
-sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# zsh-syntax-highlighting
-sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
