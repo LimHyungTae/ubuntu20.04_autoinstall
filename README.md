@@ -7,7 +7,7 @@ Auto installation of Ubuntu 20.04. It's supper annoying to set up a computer ste
 What we only need is curl. Install `curl` before you run the command.
 
 ```
-$ sudo apt-get install curl -y
+$ sudo apt-get install curl git -y
 ```
 
 # All Things are ready!
