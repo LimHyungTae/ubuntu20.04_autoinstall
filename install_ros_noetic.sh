@@ -15,7 +15,7 @@ main() {
   
   RUN=$(user_can_sudo && echo "sudo" || echo "command")
   $RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-  curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -  
+  curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | $RUN apt-key add -  
   $RUN apt update -y
   $RUN apt install ros-noetic-desktop-full -y
   
